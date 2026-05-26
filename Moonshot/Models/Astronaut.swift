@@ -5,7 +5,7 @@
 //  Created by Леонід Іванов on 07.05.2026.
 //
 
-struct Astronaut: Codable, Identifiable {
+struct Astronaut: Codable, Identifiable, Hashable {
     let id: String
     let name: String
     let description: String

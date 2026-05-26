@@ -16,9 +16,7 @@ struct BundleListView: View {
         VStack {
             List {
                 ForEach(missions) {mission in
-                    NavigationLink {
-                        MissionView(mission: mission, astronauts: astronauts)
-                    } label: {
+                    NavigationLink(value: mission) {
                         VStack {
                             Image(mission.image)
                                 .resizable()
@@ -35,6 +33,7 @@ struct BundleListView: View {
                             .padding(.vertical, 5)
                             .frame(maxWidth: .infinity)
                             .background(.lightBackground)
+                            
                         }
                         .clipShape(.rect(cornerRadius: 10))
                         .overlay(
