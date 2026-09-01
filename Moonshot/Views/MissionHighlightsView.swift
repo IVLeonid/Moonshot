@@ -12,12 +12,11 @@ struct MissionHighlightsView: View {
     
     var body: some View {
         
-        Text("Mission Highlights")
-            .font(.title.bold())
-            .padding(.bottom, 5)
-        
-        Text(mission.description)
-        
+            Text("Mission Highlights")
+                .font(.title.bold())
+                .padding(.bottom, 5)
+            
+            Text(mission.description)
     }
 }
 

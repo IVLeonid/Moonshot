@@ -39,6 +39,7 @@ struct ContentView: View {
                         Image(systemName: "square.grid.2x2")
                     }
                 }
+                .accessibilityLabel(String(showingGridBundle ? "Switch to list view" : "Switch to grid view"))
             }
         }
         .preferredColorScheme(.dark)

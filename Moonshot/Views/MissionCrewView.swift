@@ -41,6 +41,8 @@ struct MissionCrewView: View {
                         }
                         .padding(.horizontal)
                     }
+                    .accessibilityElement()
+                    .accessibilityLabel("\(crewMember.astronaut.name), \(crewMember.role)")
                 }
             }
         }

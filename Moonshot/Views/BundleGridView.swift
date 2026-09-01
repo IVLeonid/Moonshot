@@ -44,6 +44,8 @@ struct BundleGridView: View {
                                 .stroke(.lightBackground)
                             )
                     }
+                    .accessibilityElement()
+                    .accessibilityLabel("\(mission.displayName), date of launch: \(mission.formattedLaunchDate)")
                 }
             }
             .padding([.horizontal, .bottom])

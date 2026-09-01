@@ -21,6 +21,7 @@ struct MissionView: View {
                     .containerRelativeFrame(.horizontal) { width, axis in width * 0.6
                     }
                     .padding(.top)
+                    .accessibilityHidden(true)
                 
                 VStack(alignment: .leading) {
                     CustomRectangle()
@@ -40,6 +41,7 @@ struct MissionView: View {
                     Text("Crew")
                         .font(.title.bold())
                         .padding(.bottom, 5)
+                        .accessibilityHint("\(crew.count) members")
                 }
                 .padding(.horizontal)
                 

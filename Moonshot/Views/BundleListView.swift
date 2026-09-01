@@ -33,7 +33,6 @@ struct BundleListView: View {
                             .padding(.vertical, 5)
                             .frame(maxWidth: .infinity)
                             .background(.lightBackground)
-                            
                         }
                         .clipShape(.rect(cornerRadius: 10))
                         .overlay(
@@ -43,6 +42,8 @@ struct BundleListView: View {
                     }
                     .listRowBackground(Color.darkBackground)
                     .listRowSeparator(.hidden)
+                    .accessibilityElement()
+                    .accessibilityLabel("\(mission.displayName), date of launch: \(mission.formattedLaunchDate)")
                 }
             }
             .listStyle(.plain)
